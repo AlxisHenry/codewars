@@ -48,8 +48,8 @@ const nbYear = (p0, percent, aug ,p, years = 0) => {
     if (p0 >= p) {
         return years
     } else {
-        p0 = p0 + (p0 * (percent / 100)) + aug
-        return nbYear(p0, percent, aug, p, years + 1)
+        p0 = p0 + parseInt((p0 * (percent / 100))) + aug
+        return nbYear(parseInt(p0), percent, aug, p, years + 1)
     }
 }
 ```
