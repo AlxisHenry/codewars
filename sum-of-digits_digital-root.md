@@ -32,5 +32,9 @@ describe("Tests", () => {
 # **Solution**
 
 ```js
-
+const digitalRoot = (n, arr = (n.toString().split('')).map(Number)) => {
+  let total = 0
+  arr.map((nb) => { total += nb })
+  return total > 9 ? digitalRoot(total) : total
+}
 ```
