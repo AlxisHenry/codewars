@@ -38,3 +38,20 @@ const digitalRoot = (n, arr = (n.toString().split('')).map(Number)) => {
   return total > 9 ? digitalRoot(total) : total
 }
 ```
+
+**Anothers solutions using reduce**
+
+```js
+const digitalRoot = (n) => {
+  let total = ((n.toString().split('')).map(Number)).reduce((a,b) => a + b)
+  return total > 9 ? digitalRoot(total) : total  
+}
+```
+
+````js
+function digitalRoot(n) {
+  let total = n.toString().split('').reduce((a,b) => +a + +b)
+  return total > 9 ? digitalRoot(total) : total  
+}
+```
+
