@@ -27,7 +27,7 @@ const moveZeros = (arr) => {
 }
 ```
 
-*More optimize solution:*
+*More optimized solution:*
 
 ```js
 const moveZeros = (arr) => [
